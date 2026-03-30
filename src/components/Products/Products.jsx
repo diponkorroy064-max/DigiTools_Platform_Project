@@ -54,3 +54,4 @@ const Products = ({ toolObj, addingCart, setAddingCart}) => {
 };
 
 export default Products;
+

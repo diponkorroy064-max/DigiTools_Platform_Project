@@ -10,6 +10,12 @@ const Carts = ({ addingCart, setAddingCart }) => {
         setAddingCart([]);
     }
 
+    const handleDeleteCart = (obj) => {
+        console.log("remove btn clicked", obj);
+        const filterCard = addingCart.filter(item => item.id !== obj.id);
+        setAddingCart(filterCard);
+    }
+
     return (
         <div className='bg-blue-300 px-10 space-y-5'>
             <h1 className='text-3xl font-extrabold'>Your Cart</h1>
@@ -28,7 +34,7 @@ const Carts = ({ addingCart, setAddingCart }) => {
                                 </div>
 
                                 <div className='text-red-500'>
-                                    <button className='btn btn-ghost hover:text-blue-400'>Remove</button>
+                                    <button onClick={()=>handleDeleteCart(obj)} className='btn btn-ghost hover:text-blue-400'>Remove</button>
                                 </div>
                             </div>)
                     )
