@@ -2,8 +2,21 @@ import React from 'react';
 
 const Carts = () => {
     return (
-        <div>
+        <div className='bg-blue-300 px-10 space-y-5'>
+            <h1 className='text-3xl font-extrabold'>Your Cart</h1>
+
+            <div>
+                
+            </div>
             
+            <div className='flex justify-between px-10 py-3 bg-amber-500 rounded-full text-2xl font-extrabold text-white'>
+                <p>Total</p>
+                <p>$<span>80</span></p>
+            </div>
+
+            <div className='text-center px-10 py-3 bg-blue-500 rounded-full text-2xl font-extrabold text-white'>
+                <p className=''>Proceed To Checkout</p>
+            </div>
         </div>
     );
 };

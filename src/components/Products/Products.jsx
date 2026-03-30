@@ -1,8 +1,9 @@
 import React from 'react';
 import { GoCheck } from "react-icons/go";
 
+
 const Products = ({ toolObj }) => {
-    console.log(toolObj);
+    // console.log(toolObj);
     return (
         <div className="bg-base-100 w-96 shadow p-5 rounded-xl space-y-2">
             <figure className='bg-gray-200 w-10 p-1.5 border border-gray-400 rounded-full'>
@@ -14,11 +15,11 @@ const Products = ({ toolObj }) => {
 
                 <p className='text-[14px]'>{toolObj.description}</p>
 
-                <p><span className='text-2xl font-semibold'>${toolObj.price}</span>/month</p>
+                <p><span className='text-2xl font-semibold'>${toolObj.price}</span> {toolObj.period}</p>
 
                 <ul>
                     {
-                        toolObj.features.map(item => <li className='flex justify-start items-center text-[14px] font-semibold'><span><GoCheck /></span><span>{item}</span></li>)   
+                        toolObj.features.map(item => <li className='flex justify-start items-center text-[14px] font-semibold' key={toolObj.features.indexOf(item)}><span><GoCheck /></span><span>{item}</span></li>)   
                     }
                 </ul>
 
