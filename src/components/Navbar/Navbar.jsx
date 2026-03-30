@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between items-center max-w-300 bg-blue-200 m-auto py-5 px-10 sticky top-0'>
+        <div className='flex justify-between items-center max-w-300 bg-blue-200 m-auto py-2 px-10 sticky top-0'>
             <div>
                 <h1 className='text-2xl font-extrabold text-[#4f39f6]'>DigiTools</h1>
             </div>

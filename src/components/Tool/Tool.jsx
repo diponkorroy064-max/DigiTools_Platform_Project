@@ -29,7 +29,7 @@ const Tool = ({ promiseTools, addingCart, setAddingCart }) => {
             <div className="tabs flex justify-center bg-gray-50 w-43 m-auto rounded-full p-0 shadow">
                 <input onClick={handleTool} type="radio" name="my_tabs_1" className="btn rounded-full" aria-label="Products" defaultChecked />
 
-                <input onClick={handleTool} type="radio" name="my_tabs_1" className="btn rounded-full" aria-label={`Cart (${0})`} />
+                <input onClick={handleTool} type="radio" name="my_tabs_1" className="btn rounded-full" aria-label={`Cart (${addingCart.length})`} />
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6 my-5'>
@@ -40,7 +40,7 @@ const Tool = ({ promiseTools, addingCart, setAddingCart }) => {
 
             <div>
                 {
-                    toolActive == "carts" && <Carts addingCart={addingCart}></Carts>
+                    toolActive == "carts" && <Carts addingCart={addingCart} setAddingCart={setAddingCart}></Carts>
                 }
             </div>
         </div>
