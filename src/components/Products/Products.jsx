@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GoCheck } from "react-icons/go";
+import { toast } from 'react-toastify';
 
 
 const Products = ({ toolObj, addingCart, setAddingCart}) => {
@@ -9,14 +10,20 @@ const Products = ({ toolObj, addingCart, setAddingCart}) => {
     const handleToolBtn = () => {
         if (btnClicked==true) {
             setBtnClicked(false);
+            toast.error("Card Already Added !");
         }
         else {
             setBtnClicked(true);
-            const newCart = [...addingCart, toolObj];
-            setAddingCart(newCart);
-            // console.log(newCart);
+            toast.success("Card is Added !");
         }
         // console.log("get the clicked objects....", toolObj);
+        const isFound = addingCart.find(item => item.id == toolObj.id);
+        if (isFound) {
+            return;
+        }
+        const newCart = [...addingCart, toolObj];
+        setAddingCart(newCart);
+        // console.log(newCart);
     }
 
     return (

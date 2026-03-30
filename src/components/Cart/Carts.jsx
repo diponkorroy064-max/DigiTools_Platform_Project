@@ -15,20 +15,23 @@ const Carts = ({ addingCart, setAddingCart }) => {
             <h1 className='text-3xl font-extrabold'>Your Cart</h1>
 
             {
-                addingCart.map(obj =>
-                    <div key={obj.id} className='bg-gray-200 px-10 py-3 rounded-xl flex justify-between items-center shadow'>
-                        <div className='flex justify-start items-center gap-5'>
-                            <div><img className='w-10' src={obj.icon} alt="" /></div>
-                            <div>
-                                <h1 className='text-2xl font-bold'>{obj.name}</h1>
-                                <h1 className='font-bold'>${obj.price}</h1>
-                            </div>
-                        </div>
+                addingCart.length == 0 ? (<p className='text-center text-2xl font-semibold text-red-400'>Your Cart is Empty</p>) :
+                    (
+                        addingCart.map(obj =>
+                            <div key={obj.id} className='bg-gray-200 px-10 py-3 rounded-xl flex justify-between items-center shadow'>
+                                <div className='flex justify-start items-center gap-5'>
+                                    <div><img className='w-10' src={obj.icon} alt="" /></div>
+                                    <div>
+                                        <h1 className='text-2xl font-bold'>{obj.name}</h1>
+                                        <h1 className='font-bold'>${obj.price}</h1>
+                                    </div>
+                                </div>
 
-                        <div className='text-red-500'>
-                            <button className='btn btn-ghost hover:text-blue-400'>Remove</button>
-                        </div>
-                    </div>)
+                                <div className='text-red-500'>
+                                    <button className='btn btn-ghost hover:text-blue-400'>Remove</button>
+                                </div>
+                            </div>)
+                    )
             }
 
             <div className='flex justify-between px-10 py-3 bg-amber-500 shadow rounded-full text-2xl font-extrabold text-white'>

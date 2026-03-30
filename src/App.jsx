@@ -8,6 +8,7 @@ import StepCard from './components/StepCard/StepCard'
 import Pricing from './components/Pricing/Pricing'
 import Tool from './components/Tool/Tool'
 import { Suspense, useState } from 'react'
+import { ToastContainer} from 'react-toastify';
 
 const fetchTools = async () => {
   const res = await fetch('./json/data.json');
@@ -40,6 +41,8 @@ function App() {
       <Workflow></Workflow>
 
       <Footer></Footer>
+
+      <ToastContainer />
     </>
   )
 }
