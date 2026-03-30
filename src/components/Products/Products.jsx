@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GoCheck } from "react-icons/go";
 
 
 const Products = ({ toolObj }) => {
     // console.log(toolObj);
+
+    const [btnClicked, setBtnClicked] = useState(false);
+    
+    const handleToolBtn = () => {
+        if (btnClicked==true) {
+            setBtnClicked(false);
+        }
+        else {
+            setBtnClicked(true);
+        }
+        console.log("get the clicked objects....", toolObj);
+    }
+
     return (
         <div className="bg-base-100 w-96 shadow p-5 rounded-xl space-y-2">
             <figure className='bg-gray-200 w-10 p-1.5 border border-gray-400 rounded-full'>
@@ -23,8 +36,8 @@ const Products = ({ toolObj }) => {
                     }
                 </ul>
 
-                <div className="">
-                    <button className="btn btn-primary w-full">Buy Now</button>
+                <div>
+                    <button onClick={()=>handleToolBtn(toolObj)} className="btn btn-primary w-full">{btnClicked ? (<><GoCheck /> Added to Card</>) : "Buy Now"}</button>
                 </div>
             </div>
         </div>

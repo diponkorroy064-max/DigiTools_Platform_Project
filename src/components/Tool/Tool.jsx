@@ -38,7 +38,7 @@ const Tool = ({ promiseTools }) => {
                 }
             </div>
 
-            <div className=''>
+            <div>
                 {
                     toolActive == "carts" ? <Carts></Carts> : null
                 }
