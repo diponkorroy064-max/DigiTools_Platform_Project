@@ -7,7 +7,7 @@ import Workflow from './components/Workflow/Workflow'
 import StepCard from './components/StepCard/StepCard'
 import Pricing from './components/Pricing/Pricing'
 import Tool from './components/Tool/Tool'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 
 const fetchTools = async () => {
   const res = await fetch('./json/data.json');
@@ -18,6 +18,9 @@ function App() {
   const promiseTools = fetchTools();
   // console.log(promiseTools);
 
+  const [addingCart, setAddingCart] = useState([]);
+  // console.log(addingCart);
+
   return (
     <>
       <Navbar></Navbar>
@@ -27,7 +30,7 @@ function App() {
       <Rating></Rating>
 
       <Suspense fallback={<span>all tools loading...</span>}>
-        <Tool promiseTools={promiseTools}></Tool>
+        <Tool promiseTools={promiseTools} addingCart={addingCart} setAddingCart={setAddingCart}></Tool>
       </Suspense>
 
       <StepCard></StepCard>

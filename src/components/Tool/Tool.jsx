@@ -2,9 +2,10 @@ import React, { use, useState } from 'react';
 import Products from '../Products/Products';
 import Carts from '../Cart/Carts';
 
-const Tool = ({ promiseTools }) => {
+const Tool = ({ promiseTools, addingCart, setAddingCart }) => {
     const toolsData = use(promiseTools);
     // console.log(toolsData);
+    // console.log(addingCart);
 
     const [toolActive, setToolActive] = useState("products")
     const handleTool = () => {
@@ -31,16 +32,15 @@ const Tool = ({ promiseTools }) => {
                 <input onClick={handleTool} type="radio" name="my_tabs_1" className="btn rounded-full" aria-label={`Cart (${0})`} />
             </div>
 
-
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6 my-5'>
                 {
-                    toolActive =="products" ? toolsData.map(toolObj=> <Products key={toolObj.id} toolObj={toolObj}></Products>) : null
+                    toolActive =="products" && toolsData.map(toolObj=> <Products key={toolObj.id} toolObj={toolObj} addingCart={addingCart} setAddingCart={setAddingCart}></Products>)
                 }
             </div>
 
             <div>
                 {
-                    toolActive == "carts" ? <Carts></Carts> : null
+                    toolActive == "carts" && <Carts addingCart={addingCart}></Carts>
                 }
             </div>
         </div>

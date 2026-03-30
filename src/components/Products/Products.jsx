@@ -2,19 +2,21 @@ import React, { useState } from 'react';
 import { GoCheck } from "react-icons/go";
 
 
-const Products = ({ toolObj }) => {
+const Products = ({ toolObj, addingCart, setAddingCart}) => {
     // console.log(toolObj);
 
     const [btnClicked, setBtnClicked] = useState(false);
-    
     const handleToolBtn = () => {
         if (btnClicked==true) {
             setBtnClicked(false);
         }
         else {
             setBtnClicked(true);
+            const newCart = [...addingCart, toolObj];
+            setAddingCart(newCart);
+            // console.log(newCart);
         }
-        console.log("get the clicked objects....", toolObj);
+        // console.log("get the clicked objects....", toolObj);
     }
 
     return (
