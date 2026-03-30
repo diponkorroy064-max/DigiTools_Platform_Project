@@ -6,9 +6,17 @@ import Footer from './components/Footer/Footer'
 import Workflow from './components/Workflow/Workflow'
 import StepCard from './components/StepCard/StepCard'
 import Pricing from './components/Pricing/Pricing'
+import Tool from './components/Tool/Tool'
+import { Suspense } from 'react'
 
+const fetchTools = async () => {
+  const res = await fetch('./json/data.json');
+  return res.json();
+}
 
 function App() {
+  const promiseTools = fetchTools();
+  // console.log(promiseTools);
 
   return (
     <>
@@ -18,7 +26,9 @@ function App() {
 
       <Rating></Rating>
 
-      
+      <Suspense fallback={<span>all tools loading...</span>}>
+        <Tool promiseTools={promiseTools}></Tool>
+      </Suspense>
 
       <StepCard></StepCard>
 

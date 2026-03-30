@@ -22,7 +22,7 @@ const Navbar = () => {
                     <button className='btn btn-ghost'><FiShoppingCart /></button>
                 </div>
                 <div>
-                    <button className='btn btn-ghost font-semibold'>Login</button>
+                    <button className='btn btn-dash btn-secondary font-semibold'>Login</button>
                 </div>
 
                 <div>

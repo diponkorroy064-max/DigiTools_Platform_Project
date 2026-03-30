@@ -1,0 +1,155 @@
+[
+    {
+        "id": 1,
+        "name": "Notion",
+        "description": "All-in-one workspace for notes, tasks, databases, and team collaboration.",
+        "price": 10,
+        "period": "per month",
+        "tagType": "Productivity",
+        "features": [
+            "Custom Databases",
+            "Real-time Collaboration",
+            "AI Assistant",
+            "Templates Gallery",
+            "Task Management"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968890.png",
+        "buyNow": "https://notion.so/pricing"
+    },
+    {
+        "id": 2,
+        "name": "Figma",
+        "description": "Collaborative interface design tool used for UI/UX design and prototyping.",
+        "price": 12,
+        "period": "per editor/month",
+        "tagType": "Design",
+        "features": [
+            "Real-time Collaboration",
+            "Auto Layout",
+            "Prototyping",
+            "Dev Mode",
+            "Component Library"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968958.png",
+        "buyNow": "https://www.figma.com/pricing/"
+    },
+    {
+        "id": 3,
+        "name": "ChatGPT Plus",
+        "description": "Advanced AI assistant with GPT-4o access, faster responses, and priority support.",
+        "price": 20,
+        "period": "per month",
+        "tagType": "AI",
+        "features": [
+            "GPT-4o Access",
+            "Advanced Data Analysis",
+            "Image Generation",
+            "Web Browsing",
+            "Priority Access"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968898.png",
+        "buyNow": "https://chat.openai.com/"
+    },
+    {
+        "id": 4,
+        "name": "Canva Pro",
+        "description": "Easy-to-use graphic design platform with thousands of templates and assets.",
+        "price": 15,
+        "period": "per month",
+        "tagType": "Design",
+        "features": [
+            "Background Remover",
+            "Magic Studio AI",
+            "Brand Kit",
+            "Resize Design",
+            "Team Collaboration"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968895.png",
+        "buyNow": "https://www.canva.com/pro/"
+    },
+    {
+        "id": 5,
+        "name": "Midjourney",
+        "description": "Powerful AI art generator that creates stunning images from text prompts.",
+        "price": 10,
+        "period": "per month",
+        "tagType": "AI",
+        "features": [
+            "High-quality Image Generation",
+            "Style Customization",
+            "Upscaling & Variations",
+            "Community Gallery",
+            "Commercial License"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968903.png",
+        "buyNow": "https://www.midjourney.com/pricing"
+    },
+    {
+        "id": 6,
+        "name": "Framer",
+        "description": "Interactive website builder and design tool with powerful animations and CMS.",
+        "price": 20,
+        "period": "per month",
+        "tagType": "Website",
+        "features": [
+            "No-code Interactions",
+            "CMS Integration",
+            "Responsive Design",
+            "Figma Import",
+            "Custom Code"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968912.png",
+        "buyNow": "https://www.framer.com/pricing/"
+    },
+    {
+        "id": 7,
+        "name": "Zapier",
+        "description": "Automate workflows by connecting thousands of apps without coding.",
+        "price": 20,
+        "period": "per month",
+        "tagType": "Automation",
+        "features": [
+            "10,000+ App Integrations",
+            "Multi-step Zaps",
+            "AI Actions",
+            "Filters & Paths",
+            "Schedule by Zapier"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968920.png",
+        "buyNow": "https://zapier.com/pricing"
+    },
+    {
+        "id": 8,
+        "name": "Grammarly Premium",
+        "description": "AI-powered writing assistant that helps improve grammar, clarity, and tone.",
+        "price": 12,
+        "period": "per month",
+        "tagType": "Writing",
+        "features": [
+            "Advanced Grammar Check",
+            "Tone Detection",
+            "Plagiarism Checker",
+            "Generative AI",
+            "Word & Google Docs Integration"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968931.png",
+        "buyNow": "https://www.grammarly.com/premium"
+    },
+    {
+        "id": 9,
+        "name": "Loom",
+        "description": "Screen recording and video messaging tool for async team communication.",
+        "price": 10,
+        "period": "per month",
+        "tagType": "Communication",
+        "features": [
+            "Instant Screen Recording",
+            "Camera + Screen Recording",
+            "AI Transcription",
+            "Video Editing",
+            "Team Workspace"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968940.png",
+        "buyNow": "https://www.loom.com/pricing"
+    }
+]
