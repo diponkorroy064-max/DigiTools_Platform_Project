@@ -11,7 +11,7 @@ const Carts = ({ addingCart, setAddingCart }) => {
     }
 
     const handleDeleteCart = (obj) => {
-        console.log("remove btn clicked", obj);
+        // console.log("remove btn clicked", obj);
         const filterCard = addingCart.filter(item => item.id !== obj.id);
         setAddingCart(filterCard);
     }

@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar addingCart={addingCart}></Navbar>
 
       <Bannar></Bannar>
 

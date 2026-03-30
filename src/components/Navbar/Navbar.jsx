@@ -1,8 +1,8 @@
 import React from 'react';
 import { FiShoppingCart } from "react-icons/fi";
 
-
-const Navbar = () => {
+const Navbar = ({ addingCart }) => {
+    // console.log(addingCart);
     return (
         <div className='flex justify-between items-center max-w-300 bg-blue-200 m-auto py-2 px-10 sticky top-0'>
             <div>
@@ -19,7 +19,11 @@ const Navbar = () => {
 
             <div className='flex justify-center items-center gap-4'>
                 <div>
-                    <button className='btn btn-ghost'><FiShoppingCart /></button>
+                    <div className='relative'>
+                        <button className='btn btn-ghost'><FiShoppingCart /></button>
+                        <span className='absolute right-2.5 top-0 text-[10px] bg-red-500 text-white px-1 rounded-full'>{addingCart.length}</span>
+                    </div>
+                   
                 </div>
                 <div>
                     <button className='btn btn-dash btn-secondary font-semibold'>Login</button>
