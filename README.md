@@ -95,10 +95,15 @@ I can also write attractive headlines and button texts if needed. Just tell me w
 
 This section highlights why users should choose Digitools platform.
 Typical content:--
-Curated collection of high-quality digital tools
-Transparent pricing with monthly options
-Detailed features list for every tool
-Easy comparison between different tools
-Regular updates with new tools
 
-It is usually presented with icon cards or a grid layout.
+### Curated collection of high-quality digital tools
+
+### Transparent pricing with monthly options
+
+### Detailed features list for every tool
+
+### Easy comparison between different tools
+
+### Regular updates with new tools
+
+### It is usually presented with icon cards or a grid layout.
