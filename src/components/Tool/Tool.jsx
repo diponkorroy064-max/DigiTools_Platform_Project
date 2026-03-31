@@ -25,7 +25,7 @@ const Tool = ({ promiseTools, addingCart, setAddingCart }) => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 px-10 md:px-0 md:grid-cols-3 gap-6'>
                 {
                     toolActive == "products" && toolsData.map(toolObj => <Products key={toolObj.id} toolObj={toolObj} addingCart={addingCart} setAddingCart={setAddingCart}></Products>)
                 }

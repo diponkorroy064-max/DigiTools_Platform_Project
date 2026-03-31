@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Carts = ({ addingCart, setAddingCart }) => {
     // console.log(addingCart);
@@ -8,12 +9,19 @@ const Carts = ({ addingCart, setAddingCart }) => {
     const handleCheckout = () => {
         // console.log("clicked handle checkout button");
         setAddingCart([]);
+        if (addingCart.length == 0) {
+            toast.warning("Cart is Empty !");
+        }
+        else {
+            toast.warning("Proceed to checkout !");
+        }
     }
 
     const handleDeleteCart = (obj) => {
         // console.log("remove btn clicked", obj);
         const filterCard = addingCart.filter(item => item.id !== obj.id);
         setAddingCart(filterCard);
+        toast.warning("Cart is Removed !");
     }
 
     return (
@@ -34,7 +42,7 @@ const Carts = ({ addingCart, setAddingCart }) => {
                                 </div>
 
                                 <div className='text-red-500'>
-                                    <button onClick={()=>handleDeleteCart(obj)} className='btn btn-ghost hover:text-blue-400'>Remove</button>
+                                    <button onClick={() => handleDeleteCart(obj)} className='btn btn-ghost hover:text-blue-400'>Remove</button>
                                 </div>
                             </div>)
                     )

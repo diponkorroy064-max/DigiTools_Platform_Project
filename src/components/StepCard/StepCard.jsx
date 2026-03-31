@@ -12,7 +12,7 @@ const StepCard = () => {
                 <p className='text-[16px] font-semibold'>Start using premium digital tools in minutes, not hours.</p>
            </div>
 
-            <div className='flex justify-center gap-8 text-center px-10'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-8 text-center px-10'>
 
                 <div className='relative bg-white px-5 py-5 rounded-md shadow'>
                     <div className='flex justify-center'><img src={icon1} alt="" /></div>

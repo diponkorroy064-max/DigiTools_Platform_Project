@@ -2,9 +2,9 @@
 
 Digitools is an interesting platform that mainly created by React library that showcases premium digital tools and productivity software. The website allows users to browse, compare, and purchase various digital tools such as Notion, Figma, ChatGPT Plus, Canva Pro, and more. It shows a clean, minimalist design with tool cards, pricing information, and easy navigation.
 
-## Features or Section
+## Section or Components
 
-In this projects I have to create many sections of features, some important section or features description are given below shortly-
+In this projects I have to create many sections or Components, some important section or features description are given below shortly-
 
 ## Navbar Section
 
@@ -24,18 +24,6 @@ This section usually includes a beautiful hero image or illustration of digital 
 ## Statistics Section
 
 Digitools is a modern UI marketplace platform that showcases premium digital tools and productivity software. The website allows users to browse, compare, and purchase various digital tools such as Notion, Figma, ChatGPT Plus, Canva Pro, and more. It features a clean, minimalist design with tool cards, pricing information, and easy navigation.
-
-## Features Section
-
-This section highlights why users should choose Digitools platform.
-Typical content:
-Curated collection of high-quality digital tools
-Transparent pricing with monthly options
-Detailed features list for every tool
-Easy comparison between different tools
-Regular updates with new tools
-
-It is usually presented with icon cards or a grid layout.
 
 ## Tools / Products Section
 
@@ -70,7 +58,7 @@ Feature highlights for each tool
 Clear "Buy Now" or "Subscribe" buttons
 Users can filter or sort tools by category (Productivity, Design, AI, etc.) or by popularity.
 
-## Footer
+## Footer section
 
 The footer contains standard website information:
 
@@ -89,16 +77,28 @@ It usually has a dark or light background matching the overall design.
 Would you like me to write a full website description (for About page or meta description), or shorter section-wise copy that you can directly use on the website?
 I can also write attractive headlines and button texts if needed. Just tell me what you want.
 
-## Technology that I use to create this project--
+### Technology that I use to create this project--
 
-## React.js Library
+### React.js Library
 
-## Tailwind CSS & DaisyUI
+### Tailwind CSS & DaisyUI
 
-## Javascript(ES6+)
+### Javascript(ES6+)
 
-## React-Toastify (NPM Package)
+### React-Toastify (NPM Package)
 
-## React Icon
+### React Icon
 
-## JSON (for product data)
+### JSON (for product data)
+
+## Features about this Project-
+
+This section highlights why users should choose Digitools platform.
+Typical content:--
+Curated collection of high-quality digital tools
+Transparent pricing with monthly options
+Detailed features list for every tool
+Easy comparison between different tools
+Regular updates with new tools
+
+It is usually presented with icon cards or a grid layout.

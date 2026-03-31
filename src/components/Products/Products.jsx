@@ -26,7 +26,7 @@ const Products = ({ toolObj, addingCart, setAddingCart}) => {
     }
 
     return (
-        <div className="bg-base-100 w-96 border border-gray-300 shadow p-5 rounded-xl space-y-2 relative">
+        <div className="bg-base-100 border border-gray-300 shadow p-5 rounded-xl space-y-2 relative">
             <div className='bg-gray-200 w-14 p-2 border border-gray-400 rounded-full'>
                 <img className='w-12' src={toolObj.icon} alt="Tools" />
             </div>

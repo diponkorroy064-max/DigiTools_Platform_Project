@@ -21,7 +21,7 @@ const Navbar = ({ addingCart }) => {
                 <div>
                     <div className='relative'>
                         <button className=''><FiShoppingCart /></button>
-                        <span className='absolute -top-2 -right-2 text-[10px] bg-red-500 text-white px-1 rounded-full'>{addingCart.length}</span>
+                        <span className={`absolute -top-2 -right-2 text-[10px] bg-red-500 text-white px-1 rounded-full ${addingCart.length==0 && "hidden"}`}>{addingCart.length}</span>
                     </div>
                 </div>
                 <div>
