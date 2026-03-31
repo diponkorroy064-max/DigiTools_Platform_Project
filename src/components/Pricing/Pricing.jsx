@@ -3,7 +3,7 @@ import { GoCheck } from "react-icons/go";
 
 const Pricing = () => {
     return (
-        <div className='max-w-300 m-auto px-10 py-12 space-y-5'>
+        <div className='max-w-300 m-auto px-10 py-12 space-y-7'>
             <div className='text-center'>
                 <h1 className='text-3xl font-bold'>Simple, Transparent Pricing</h1>
                 <p className='text-gray-500'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
@@ -11,7 +11,7 @@ const Pricing = () => {
 
             <div className='flex justify-center gap-8 '>
 
-                <div className='bg-gray-200 px-10 py-2 rounded-md shadow space-y-3'>
+                <div className='bg-gray-200 px-10 py-2 rounded-md shadow space-y-2'>
                     <h3 className='text-2xl font-bold'>Starter</h3>
                     <p>Perfect for getting started</p>
                     <h1 className='text-3xl font-bold'>$0/month</h1>
@@ -26,7 +26,7 @@ const Pricing = () => {
                     <button className='btn btn-primary w-full rounded-2xl'>Get Started Free</button>
                 </div>
 
-                <div className='bg-[#4f39f6] text-white px-10 py-2 rounded-md shadow space-y-3'>
+                <div className='bg-[#4f39f6] text-white px-10 py-2 rounded-md shadow space-y-2 relative'>
                     <h3 className='text-2xl font-bold'>Pro</h3>
                     <p>Best for professionals</p>
                     <h1 className='text-3xl font-bold'>$29/month</h1>
@@ -40,9 +40,10 @@ const Pricing = () => {
                         <p className='flex justify-start items-center'> <GoCheck /> <span>Advanced analytics</span></p>
                     </div>
                     <button className='btn btn-default w-full rounded-2xl'>Get Started Free</button>
+                    <span className='absolute shadow -top-3 left-17 badge badge-soft badge-warning text-[12px] rounded-full font-bold'>Most popular</span>
                 </div>
 
-                <div className='bg-gray-200 px-10 py-2 rounded-md shadow space-y-3'>
+                <div className='bg-gray-200 px-10 py-2 rounded-md shadow space-y-2'>
                     <h3 className='text-2xl font-bold'>Enterprise</h3>
                     <p>For teams and businesses</p>
                     <h1 className='text-3xl font-bold'>$99/month</h1>

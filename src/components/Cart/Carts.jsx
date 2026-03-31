@@ -17,7 +17,7 @@ const Carts = ({ addingCart, setAddingCart }) => {
     }
 
     return (
-        <div className='bg-blue-300 px-10 space-y-5'>
+        <div className='bg-blue-200 py-6 px-10 space-y-5'>
             <h1 className='text-3xl font-extrabold'>Your Cart</h1>
 
             {
@@ -40,7 +40,7 @@ const Carts = ({ addingCart, setAddingCart }) => {
                     )
             }
 
-            <div className='flex justify-between px-10 py-3 bg-amber-500 shadow rounded-full text-2xl font-extrabold text-white'>
+            <div className='flex justify-between px-14 py-3 bg-amber-500 shadow rounded-full text-2xl font-extrabold text-white'>
                 <p>Total</p>
                 <p>$<span>{totalPrice}</span></p>
             </div>
