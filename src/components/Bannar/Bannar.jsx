@@ -2,6 +2,7 @@ import React from 'react';
 import bannarImg from '../../assets/banner.png';
 import bannarIcon from '../../assets/group-5.png';
 import { FaPlay } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Bannar = () => {
     return (
@@ -17,7 +18,7 @@ const Bannar = () => {
                 <p className='text-gray-500'>Explore Products</p>
 
                 <div className='flex gap-4'>
-                    <button className='btn rounded-full btn-soft btn-primary'>Explore Products</button>
+                    <button className='btn rounded-full btn-soft btn-primary'>Explore Productsh <FaArrowRight /></button>
                     <button className='btn rounded-full btn-soft btn-secondary'><FaPlay /> Watch Demo</button>
                 </div>
             </div>

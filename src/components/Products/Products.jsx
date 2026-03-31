@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { GoCheck } from "react-icons/go";
 import { toast } from 'react-toastify';
 
-
 const Products = ({ toolObj, addingCart, setAddingCart}) => {
     // console.log(toolObj);
 
@@ -16,7 +15,7 @@ const Products = ({ toolObj, addingCart, setAddingCart}) => {
             setBtnClicked(true);
             toast.success("Card is Added !");
         }
-        // console.log("get the clicked objects....", toolObj);
+        console.log("get the clicked objects....", toolObj);
         const isFound = addingCart.find(item => item.id == toolObj.id);
         if (isFound) {
             return;
@@ -27,9 +26,9 @@ const Products = ({ toolObj, addingCart, setAddingCart}) => {
     }
 
     return (
-        <div className="bg-base-100 w-96 shadow p-5 rounded-xl space-y-2">
-            <figure className='bg-gray-200 w-10 p-1.5 border border-gray-400 rounded-full'>
-                <img className='w-10' src={toolObj.icon} alt="Tools" />
+        <div className="bg-base-100 w-96 shadow p-5 rounded-xl space-y-2 relative">
+            <figure className='bg-gray-200 w-14 p-2 border border-gray-400 rounded-full'>
+                <img className='w-12' src={toolObj.icon} alt="Tools" />
             </figure>
 
             <div className="space-y-2">
@@ -49,6 +48,7 @@ const Products = ({ toolObj, addingCart, setAddingCart}) => {
                     <button onClick={()=>handleToolBtn(toolObj)} className="btn btn-primary w-full">{btnClicked ? (<><GoCheck /> Added to Card</>) : "Buy Now"}</button>
                 </div>
             </div>
+            <span className={`absolute top-3 right-6 shadow badge badge-soft ${toolObj.tag == "popular" ? "badge-primary" : toolObj.tag == "new" ?"badge-accent": "badge-secondary"}`}>{toolObj.tag}</span>
         </div>
     );
 };

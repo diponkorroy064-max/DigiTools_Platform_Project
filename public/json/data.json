@@ -4,7 +4,8 @@
         "name": "Notion",
         "description": "All-in-one workspace for notes, tasks, databases, and team collaboration.",
         "price": 10,
-        "period": "per month",
+        "period": "monthly",
+        "tag": "best seller",
         "tagType": "Productivity",
         "features": [
             "Custom Databases",
@@ -13,15 +14,15 @@
             "Templates Gallery",
             "Task Management"
         ],
-        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968890.png",
-        "buyNow": "https://notion.so/pricing"
+        "icon": "https://i.ibb.co.com/sSWfS6L/Notion-Logo-Vector-removebg-preview.png"
     },
     {
         "id": 2,
         "name": "Figma",
         "description": "Collaborative interface design tool used for UI/UX design and prototyping.",
         "price": 12,
-        "period": "per editor/month",
+        "period": "monthly",
+        "tag": "popular",
         "tagType": "Design",
         "features": [
             "Real-time Collaboration",
@@ -30,15 +31,15 @@
             "Dev Mode",
             "Component Library"
         ],
-        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968958.png",
-        "buyNow": "https://www.figma.com/pricing/"
+        "icon": "https://i.ibb.co.com/rKdnsGjS/Figma.png"
     },
     {
         "id": 3,
         "name": "ChatGPT Plus",
         "description": "Advanced AI assistant with GPT-4o access, faster responses, and priority support.",
         "price": 20,
-        "period": "per month",
+        "period": "monthly",
+        "tag": "best seller",
         "tagType": "AI",
         "features": [
             "GPT-4o Access",
@@ -47,15 +48,15 @@
             "Web Browsing",
             "Priority Access"
         ],
-        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968898.png",
-        "buyNow": "https://chat.openai.com/"
+        "icon": "https://i.ibb.co.com/qMQS1fML/chat-GPT-plus.png"
     },
     {
         "id": 4,
         "name": "Canva Pro",
         "description": "Easy-to-use graphic design platform with thousands of templates and assets.",
         "price": 15,
-        "period": "per month",
+        "period": "monthly",
+        "tag": "popular",
         "tagType": "Design",
         "features": [
             "Background Remover",
@@ -64,15 +65,15 @@
             "Resize Design",
             "Team Collaboration"
         ],
-        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968895.png",
-        "buyNow": "https://www.canva.com/pro/"
+        "icon": "https://i.ibb.co.com/GZWcX2D/canva-pro.png"
     },
     {
         "id": 5,
         "name": "Midjourney",
         "description": "Powerful AI art generator that creates stunning images from text prompts.",
         "price": 10,
-        "period": "per month",
+        "period": "monthly",
+        "tag": "new",
         "tagType": "AI",
         "features": [
             "High-quality Image Generation",
@@ -81,15 +82,15 @@
             "Community Gallery",
             "Commercial License"
         ],
-        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968903.png",
-        "buyNow": "https://www.midjourney.com/pricing"
+        "icon": "https://i.ibb.co.com/bj2DXfSN/mid-journey.png"
     },
     {
         "id": 6,
         "name": "Framer",
         "description": "Interactive website builder and design tool with powerful animations and CMS.",
         "price": 20,
-        "period": "per month",
+        "period": "monthly",
+        "tag": "popular",
         "tagType": "Website",
         "features": [
             "No-code Interactions",
@@ -98,15 +99,15 @@
             "Figma Import",
             "Custom Code"
         ],
-        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968912.png",
-        "buyNow": "https://www.framer.com/pricing/"
+        "icon": "https://i.ibb.co.com/vvXKcD2X/framer.png"
     },
     {
         "id": 7,
         "name": "Zapier",
         "description": "Automate workflows by connecting thousands of apps without coding.",
         "price": 20,
-        "period": "per month",
+        "period": "monthly",
+        "tag": "best seller",
         "tagType": "Automation",
         "features": [
             "10,000+ App Integrations",
@@ -115,15 +116,15 @@
             "Filters & Paths",
             "Schedule by Zapier"
         ],
-        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968920.png",
-        "buyNow": "https://zapier.com/pricing"
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968920.png"
     },
     {
         "id": 8,
         "name": "Grammarly Premium",
         "description": "AI-powered writing assistant that helps improve grammar, clarity, and tone.",
         "price": 12,
-        "period": "per month",
+        "period": "monthly",
+        "tag": "popular",
         "tagType": "Writing",
         "features": [
             "Advanced Grammar Check",
@@ -132,15 +133,15 @@
             "Generative AI",
             "Word & Google Docs Integration"
         ],
-        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968931.png",
-        "buyNow": "https://www.grammarly.com/premium"
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968931.png"
     },
     {
         "id": 9,
         "name": "Loom",
         "description": "Screen recording and video messaging tool for async team communication.",
         "price": 10,
-        "period": "per month",
+        "period": "monthly",
+        "tag": "new",
         "tagType": "Communication",
         "features": [
             "Instant Screen Recording",
@@ -149,7 +150,6 @@
             "Video Editing",
             "Team Workspace"
         ],
-        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968940.png",
-        "buyNow": "https://www.loom.com/pricing"
+        "icon": "https://i.ibb.co.com/CsnxrhYp/loom-pro.png"
     }
 ]
