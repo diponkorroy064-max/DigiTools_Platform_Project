@@ -20,10 +20,9 @@ const Navbar = ({ addingCart }) => {
             <div className='flex justify-center items-center gap-4'>
                 <div>
                     <div className='relative'>
-                        <button className='btn btn-ghost'><FiShoppingCart /></button>
-                        <span className='absolute right-2.5 top-0 text-[10px] bg-red-500 text-white px-1 rounded-full'>{addingCart.length}</span>
+                        <button className=''><FiShoppingCart /></button>
+                        <span className='absolute -top-2 -right-2 text-[10px] bg-red-500 text-white px-1 rounded-full'>{addingCart.length}</span>
                     </div>
-                   
                 </div>
                 <div>
                     <button className='btn btn-dash btn-secondary font-semibold'>Login</button>
