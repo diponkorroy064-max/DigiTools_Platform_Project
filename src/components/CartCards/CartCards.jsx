@@ -36,8 +36,8 @@ const CartCards = ({ addingCart, setAddingCart }) => {
                                 </div>
                             </div>
 
-                            <div className='text-red-500'>
-                                <button onClick={() => handleDeleteCart(obj)} className='btn btn-ghost hover:text-blue-400'>Remove</button>
+                            <div className=''>
+                                <button onClick={() => handleDeleteCart(obj)} className='btn btn-ghost hover:text-red-500'>Remove</button>
                             </div>
                         </div>
                     )

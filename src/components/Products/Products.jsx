@@ -45,7 +45,7 @@ const Products = ({ toolObj, addingCart, setAddingCart}) => {
                 </ul>
 
                 <div>
-                    <button onClick={()=>handleToolBtn(toolObj)} className="btn btn-primary w-full">{btnClicked ? (<><GoCheck /> Added to Card</>) : "Buy Now"}</button>
+                    <button onClick={()=>handleToolBtn(toolObj)} className={`btn w-full ${btnClicked? "btn-secondary":"btn-primary"}`}>{btnClicked ? (<><GoCheck /> Added to Card</>) : "Buy Now"}</button>
                 </div>
             </div>
             <span className={`absolute top-3 right-6 shadow badge badge-soft ${toolObj.tag == "popular" ? "badge-primary" : toolObj.tag == "new" ?"badge-accent": "badge-secondary"}`}>{toolObj.tag}</span>
