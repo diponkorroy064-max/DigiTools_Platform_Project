@@ -15,7 +15,7 @@ const Products = ({ toolObj, addingCart, setAddingCart}) => {
             setBtnClicked(true);
             toast.success("Card is Added !");
         }
-        console.log("get the clicked objects....", toolObj);
+        // console.log("get the clicked objects....", toolObj);
         const isFound = addingCart.find(item => item.id == toolObj.id);
         if (isFound) {
             return;

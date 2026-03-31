@@ -11,15 +11,15 @@ const Bannar = () => {
                 <p className='bg-blue-200 rounded-2xl flex justify-center items-center gap-2 w-74 py-1 px-2 text-indigo-500 font-bold border border-white'> <img src={bannarIcon} alt="" /> <span>New: AI-Powered Tools Available</span></p>
 
                 <h1 className='text-4xl font-bold'>Supercharge Your</h1>
-                <h1 className='text-4xl font-bold'>Digital Workflow</h1>
+                <h1 className='text-4xl text-[#4f39f6] font-bold'>Digital Workflow</h1>
 
                 <p className='text-gray-600'>Access premium AI tools, design assets, templates, and productivity </p>
                 <p className='text-gray-600'>software—all in one place. Start creating fast today.</p>
                 <p className='text-gray-600'>Explore Products</p>
 
                 <div className='flex gap-4'>
-                    <button className='btn rounded-full btn-soft btn-primary'>Explore Productsh <FaArrowRight /></button>
-                    <button className='btn rounded-full btn-soft btn-secondary'><FaPlay /> Watch Demo</button>
+                    <button className='btn rounded-full btn-primary'>Explore Productsh <FaArrowRight /></button>
+                    <button className='btn rounded-full btn-outline btn-secondary'><FaPlay /> Watch Demo</button>
                 </div>
             </div>
 
